@@ -203,10 +203,9 @@ la clausola <code>SELECT</code> permette di selezionare le colonne che si voglio
 <strong>Sintassi clausola <code>FROM</code></strong><br>
 la clausola <code>FROM</code> permette di selezionare la tabella o le tabelle da cui si vuole fare la selezione<br>
 Per congiugere due tabelle è possible utilizzare il comando <code>JOIN</code><br>
-<a href="samu698.github.io/join.html"><strong>Come funziona il <code>JOIN</code></strong></a></p>
+<a href="join.html"><strong>Come funziona il <code>JOIN</code></strong></a></p>
 <h5 class="code-line" data-line-start=99 data-line-end=100><a id="Esempi_99"></a>Esempi</h5>
-<pre><code class="has-line-data" data-line-start="101" data-line-end="105" class="language-SQL"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-comment">-- snip snip</span>
-<span class="hljs-keyword">FROM</span> tab1 <span class="hljs-comment">-- i dati saranno presi da tab1</span>
+<pre><code class="has-line-data" data-line-start="101" data-line-end="105" class="language-SQL"><span class="hljs-operator"><span class="hljs-keyword">FROM</span> tab1 <span class="hljs-comment">-- i dati saranno presi da tab1</span>
 <span class="hljs-keyword">FROM</span> tab1 <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> tab2 <span class="hljs-comment">-- i dati sono presi dall’uninone delle tabelle tab1 e tab2</span>
 </span></code></pre>
 <p class="has-line-data" data-line-start="105" data-line-end="110"><strong>Sintassi clausola <code>WHERE</code></strong><br>
@@ -238,9 +237,8 @@ la clausola <code>LIKE</code> permette di confrontare il valore di una stringa c
 </tr>
 </tbody>
 </table>
-<p class="has-line-data" data-line-start="115" data-line-end="116">Esempi</p>
-<pre><code class="has-line-data" data-line-start="117" data-line-end="124" class="language-SQL"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-comment">--snip snip</span>
-<span class="hljs-keyword">WHERE</span> nome=<span class="hljs-string">"Michere"</span> <span class="hljs-comment">-- nome deve essere uguale a Michele</span>
+<h5 class="code-line" data-line-start=115 data-line-end=116><a id="Esempi_115"></a>Esempi</h5>
+<pre><code class="has-line-data" data-line-start="117" data-line-end="124" class="language-SQL"><span class="hljs-keyword">WHERE</span> nome=<span class="hljs-string">"Michere"</span> <span class="hljs-comment">-- nome deve essere uguale a Michele</span>
 <span class="hljs-keyword">WHERE</span> prezzo &lt; <span class="hljs-number">3.5</span> <span class="hljs-comment">-- prezzo deve essere minore di 3.5</span>
 <span class="hljs-keyword">WHERE</span> prezzo <span class="hljs-keyword">BETWEEN</span> <span class="hljs-number">10</span> <span class="hljs-keyword">AND</span> <span class="hljs-number">15</span> <span class="hljs-comment">-- prezzo compreso tra 10 e 15</span>
 <span class="hljs-keyword">WHERE</span> cognome <span class="hljs-keyword">BETWEEN</span> <span class="hljs-string">'A'</span> <span class="hljs-keyword">AND</span> <span class="hljs-string">'F'</span> <span class="hljs-comment">-- i cognomi che hanno l'iniziale tra A e F</span>
@@ -249,7 +247,7 @@ la clausola <code>LIKE</code> permette di confrontare il valore di una stringa c
 <p class="has-line-data" data-line-start="124" data-line-end="126"><strong>Sintassi clausola <code>ORDER BY</code></strong><br>
 la clausola <code>ORDER BY</code> permette di riordinare i risultati di una query secondo la colonna selezionata, è possibile selezionare più colonne nel caso ci siano elementi uguali nella primo colonna ed è possibile cambiare l’ordine usando <code>ASC</code> ascendente e <code>DESC</code> discendente</p>
 <h5 class="code-line" data-line-start=126 data-line-end=127><a id="Esempi_126"></a>Esempi</h5>
-<pre><code class="has-line-data" data-line-start="128" data-line-end="132" class="language-SQL"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-comment">-- snip snip</span>
+<pre><code class="has-line-data" data-line-start="128" data-line-end="132" class="language-SQL">
 <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> colonna1 <span class="hljs-comment">-- i dati saranno riordinati secondo colonna1</span>
 <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> categoria, sottocategoria <span class="hljs-comment">-- ordina prima la categoria, le righe con la stessa categoria sono ordinate per la sottocategoria</span>
 </span></code></pre>
