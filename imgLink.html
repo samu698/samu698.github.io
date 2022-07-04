@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<title>easy img %</title>
+	<script src="js.js"></script>
+	<style>
+input, textarea {
+	font-family: monospace;
+}
+.bp {
+	border: solid 1px #9f9f9f;
+	padding: 5px;
+}
+#loadBtn {
+	width: 100%;
+	height: 500px;
+}
+.showDiv {
+	position: absolute;
+	background: rgba(0, 255, 0, 40%);
+}
+img {
+	width: 100%;
+	height: auto;
+	image-rendering: crisp-edges;
+}
+#imgDiv {
+	margin: auto;
+	position: relative;
+}
+#codeTxt {
+	width: 80%
+}
+textarea {
+	width: 99%;
+	height: 50%;
+}
+	</style>
+</head>
+<body>
+	<div class="bp">
+		<button id="loadBtn">Load image</button>
+		<div id="imgDiv" style="display: none">
+			<img id="img"></img>
+		</div>
+	</div>
+	<div class="bp">
+		<input type="file" id="fileChoose" hidden="hidden">
+		<label for="scale" id="scaleTxt" data-hover="Select the scale of the image">Scale: 1.00</label>
+		<input name="scale" type="range" min="0.2" max="1" step="0.05" value="0.5" id="scaleSlider">
+		<br>
+		<label for="code" data-hover="This code will be added to the textarea below, {T}, {L}, {W}, {H} will be replaced respectively with the top, left, width, height percentages">Code to add: </label>
+		<input name="code" type="text" id="codeTxt">
+	</div>
+	<textarea id="outputTxt" readonly rows="15"></textarea>
+</body>
+</html>
