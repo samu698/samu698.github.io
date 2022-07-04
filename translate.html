@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title>Translate wiki links</title>
+	<script src="translate.js"></script>
+	<style>
+input, textarea { font-family: monospace }
+#regex { width: 80% }
+textarea {
+	resize: none;
+	width: 99%;
+	height: 100%
+}
+#input { height: 20vh }
+#output p { margin-bottom: 0; text-align: center }
+	</style>
+</head>
+<body>
+	<label for="regex">Link regex: </label>
+	<input name="regex" type="text" id="regex" value="(?<=\[\[)[^|\n]+(?=.+\]\])">
+	<button id="run">Translate</button>
+	<br>
+	<div id="input">
+		<textarea id="toTranslateTxt"></textarea>
+	</div>
+	<hr>
+	<div id="output"></div>
+</body>
+</html>
