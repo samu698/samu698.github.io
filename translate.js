@@ -42,6 +42,7 @@ function regexReplace(data) {
 		p.innerHTML = lang;
 		textarea.innerHTML = output;
 		textarea.setAttribute('rows', 10);
+		textarea.setAttribute('readonly', '');
 
 		outputDiv.appendChild(p);
 		outputDiv.appendChild(textarea);
